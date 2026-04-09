@@ -7,8 +7,10 @@ import { Terminal, Key, Cpu, Loader2, ExternalLink, Eye, EyeOff } from "lucide-r
 import { toast } from "@/hooks/use-toast";
 
 const CODE_SERVER_SCRIPT = `#!/bin/bash
+
+
 PORT=8080
-AUTH="password"
+AUTH="none"   # change to "none" if you don't want password
 echo "🚀 Starting code-server setup..."
 if ! command -v code-server &> /dev/null; then
     echo "📦 Installing code-server..."
