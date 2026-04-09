@@ -134,7 +134,7 @@ export default function SandboxLauncher() {
               Sandbox: {sandbox.sandboxId}
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-xs text-muted-foreground">Password: 123456</span>
+              <span className="text-xs text-muted-foreground">No password required</span>
               <a href={sandbox.url} target="_blank" rel="noopener noreferrer">
                 <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground">
                   <ExternalLink className="h-4 w-4 mr-1" /> Open in tab
