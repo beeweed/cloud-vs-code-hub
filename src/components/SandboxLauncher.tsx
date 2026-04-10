@@ -60,7 +60,7 @@ export default function SandboxLauncher() {
     try {
       const sbx = await Sandbox.create(templateId.trim(), {
         apiKey: apiKey.trim(),
-        timeoutMs: 600_000,
+        timeoutMs: 3_600_000, // 1 hour
       });
 
       setSandbox({ status: "installing", sandboxId: sbx.sandboxId });
