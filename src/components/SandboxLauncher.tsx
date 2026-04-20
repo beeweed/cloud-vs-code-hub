@@ -9,7 +9,7 @@ import { toast } from "@/hooks/use-toast";
 const CODE_SERVER_SCRIPT = `#!/bin/bash
 
 
-PORT=9000
+PORT=8080
 AUTH="none"   # change to "none" if you don't want password
 echo "🚀 Starting code-server setup..."
 if ! command -v code-server &> /dev/null; then
@@ -94,7 +94,7 @@ export default function SandboxLauncher() {
         return;
       }
 
-      const host = sbx.getHost(9000);
+      const host = sbx.getHost(8080);
       const url = `https://${host}`;
 
       setSandbox({ status: "ready", url, sandboxId: sbx.sandboxId });
