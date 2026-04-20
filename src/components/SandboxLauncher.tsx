@@ -9,7 +9,7 @@ import { toast } from "@/hooks/use-toast";
 const CODE_SERVER_SCRIPT = `#!/bin/bash
 
 
-PORT=8080
+PORT=9000
 AUTH="none"   # change to "none" if you don't want password
 echo "🚀 Starting code-server setup..."
 if ! command -v code-server &> /dev/null; then
